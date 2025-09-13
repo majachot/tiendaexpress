@@ -99,14 +99,14 @@ public class Tiendaexpress {
             subtotal += precio;
         }
 
-        double impuesto = 0.16; // 16% IVA
+        double impuesto = 0.15; // 15% IVA
         double totalConImpuesto = total(subtotal, impuesto);
 
         // Reporte
         System.out.println("\n--- REPORTE DE COMPRA ---");
         System.out.println("Productos comprados: " + carrito.size());
         System.out.printf("Subtotal: $%.2f\n", subtotal);
-        System.out.printf("Total con IVA (16%%): $%.2f\n", totalConImpuesto);
+        System.out.printf("Total con IVA (15%%): $%.2f\n", totalConImpuesto);
 
         // Validar correo
         String correo;
